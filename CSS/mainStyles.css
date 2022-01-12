@@ -1,5 +1,83 @@
 body {
   margin: 0;
   padding: 0;
+  background: #6c5ce7 !important;
+  color: #f5f6fa !important;
+  font-family: 'Mukta', sans-serif !important;
+}
+
+body #welcomeContainer {
+  padding-top: 30px !important;
+}
+
+body #welcomeContainer #welcomeHeader {
+  font-size: 62px;
+}
+
+body #formContainer {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  padding-top: 30px;
+}
+
+body #formContainer #loginForm {
+  padding: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  width: 20% !important;
+  height: 50% !important;
+}
+
+body #formContainer #loginForm input {
+  color: #6c5ce7 !important;
+}
+
+body #formContainer #loginForm label {
+  color: #6c5ce7 !important;
+}
+
+body #formContainer #loginForm button {
+  margin: 10px auto;
+  background: #6c5ce7;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+}
+
+body #formContainer h5 {
+  padding-top: 15px;
+}
+
+body #formContainer a {
+  position: relative;
+  text-decoration: none;
+  color: #2d3436;
+}
+
+body #formContainer a:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  content: '';
+  width: 0%;
+  height: 1px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background: #2d3436;
+  color: transparent;
+}
+
+body #formContainer a:hover:after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+  body #formContainer #loginForm {
+    width: 90% !important;
+  }
 }
 /*# sourceMappingURL=mainStyles.css.map */

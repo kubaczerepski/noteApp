@@ -1,5 +1,69 @@
+@import"./_colors";
 body{
     margin:0;
-    padding: 0;
-    
+    padding:0;
+    background: $mainColor !important;
+    color: $accentColor !important;
+    font-family: 'Mukta', sans-serif !important;
+    #welcomeContainer{
+        padding-top: 30px !important;
+        #welcomeHeader{
+            font-size: 62px;
+        }
+    }
+    #formContainer{
+        flex-direction: column !important;
+        padding-top: 30px;
+        #loginForm{
+            padding: 20px ;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            width: 20% !important ;
+            height: 50% !important;
+            input{
+                color: $mainColor !important;
+            }
+            label{
+                color: $mainColor !important;
+            }
+            button{
+                margin: 10px auto;
+                background: $mainColor;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border: none;
+            }
+        }
+        h5{
+            padding-top: 15px;
+        }
+        a{
+            position: relative;
+            text-decoration: none;
+            color:#2d3436;
+        }
+        a:after{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            content: '';
+            width: 0%;
+            height: 1px;
+            transition: all .3s;
+            background:#2d3436 ;
+            color: transparent;
+        }
+        a:hover:after{
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 920px){
+    body{
+        #formContainer{
+            #loginForm{
+                width: 90% !important;
+            }
+        }
+    }
 }
