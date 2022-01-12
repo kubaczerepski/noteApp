@@ -12,7 +12,7 @@ body #welcomeContainer {
   padding-top: 30px !important;
 }
 
-body #welcomeContainer #welcomeHeader {
+body #welcomeContainer #welcomeHeader, body #welcomeContainer #welcomeHeaderRegister {
   font-size: 62px;
 }
 
@@ -30,7 +30,10 @@ body #formContainer #loginForm {
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
   width: 25% !important;
-  height: 65% !important;
+}
+
+body #formContainer #loginForm #floatingPasswordConfirm {
+  margin-top: 15px !important;
 }
 
 body #formContainer #loginForm input {
@@ -104,6 +107,10 @@ body footer i:hover {
 }
 
 @media only screen and (max-width: 920px) {
+  body #welcomeContainer #welcomeHeader, body #welcomeContainer #welcomeHeaderRegister {
+    font-size: 35px;
+    text-align: center;
+  }
   body #formContainer #loginForm {
     width: 90% !important;
   }

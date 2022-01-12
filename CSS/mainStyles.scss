@@ -9,7 +9,7 @@ body{
     font-family: 'Mukta', sans-serif !important;
     #welcomeContainer{
         padding-top: 30px !important;
-        #welcomeHeader{
+        #welcomeHeader,#welcomeHeaderRegister{
             font-size: 62px;
         }
     }
@@ -17,11 +17,13 @@ body{
         flex-direction: column !important;
         padding-top: 30px;
         #loginForm{
-            padding: 20px ;
+            padding: 20px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 10px;
-            width: 25% !important ;
-            height: 65% !important;
+            width: 25% !important;
+            #floatingPasswordConfirm{
+                margin-top: 15px !important;
+            }
             input{
                 color: $mainColor !important;
             }
@@ -83,6 +85,12 @@ body{
 }
 @media only screen and (max-width: 920px){
     body{
+        #welcomeContainer{
+            #welcomeHeader,#welcomeHeaderRegister{
+                font-size: 35px;
+                text-align: center;
+            }
+        }
         #formContainer{
             #loginForm{
                 width: 90% !important;
