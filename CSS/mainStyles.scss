@@ -1,5 +1,7 @@
 @import"./_colors";
 body{
+    position: relative !important;
+    height: 100% !important;
     margin:0;
     padding:0;
     background: $mainColor !important;
@@ -18,8 +20,8 @@ body{
             padding: 20px ;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 10px;
-            width: 20% !important ;
-            height: 50% !important;
+            width: 25% !important ;
+            height: 65% !important;
             input{
                 color: $mainColor !important;
             }
@@ -31,6 +33,10 @@ body{
                 background: $mainColor;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 border: none;
+            }
+            button:hover{
+                background: $accentColor;
+                color: $mainColor;
             }
         }
         h5{
@@ -56,6 +62,23 @@ body{
         a:hover:after{
             width: 100%;
         }
+    }
+    footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+            i{
+                border-radius: 50%;
+                padding: 10px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                cursor: pointer;
+                color: $accentColor;
+            }
+            i:hover{
+                color: $mainColor;
+                background: $accentColor;
+            }
     }
 }
 @media only screen and (max-width: 920px){

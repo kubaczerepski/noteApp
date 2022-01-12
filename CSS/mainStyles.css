@@ -1,4 +1,6 @@
 body {
+  position: relative !important;
+  height: 100% !important;
   margin: 0;
   padding: 0;
   background: #6c5ce7 !important;
@@ -27,8 +29,8 @@ body #formContainer #loginForm {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
-  width: 20% !important;
-  height: 50% !important;
+  width: 25% !important;
+  height: 65% !important;
 }
 
 body #formContainer #loginForm input {
@@ -45,6 +47,11 @@ body #formContainer #loginForm button {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: none;
+}
+
+body #formContainer #loginForm button:hover {
+  background: #f5f6fa;
+  color: #6c5ce7;
 }
 
 body #formContainer h5 {
@@ -73,6 +80,27 @@ body #formContainer a:after {
 
 body #formContainer a:hover:after {
   width: 100%;
+}
+
+body footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+body footer i {
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  color: #f5f6fa;
+}
+
+body footer i:hover {
+  color: #6c5ce7;
+  background: #f5f6fa;
 }
 
 @media only screen and (max-width: 920px) {

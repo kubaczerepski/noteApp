@@ -16,7 +16,7 @@
         <h1 id="welcomeHeader">Welcome</h1>
     </section>
     <section class="container-fluid d-flex justify-content-center align-items-center" id="formContainer">
-        <form method="POST" class="form-floating" id="loginForm">
+        <form method="POST" class="form-floating " id="loginForm">
             <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="Email">
                     <label for="floatingInput">Email address</label>
@@ -29,7 +29,22 @@
         </form>
         <h5>Don't have an account? <a href="./php/registerPage.php">Join us!</a></h2>
     </section>
-
+    <footer class="text-center" >
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <section class=" display-flex justify-content-center align-items-center mb-4">
+          <a class="btn  btn-floating m-1" href="https://github.com/kubaczerepski" target="_blank" role="button"
+          ><i class="fab fa-github"></i></a>
+          <a class="btn  btn-floating m-1" href="https://www.freecodecamp.org/kubaczerepski" target="_blank" role="button"
+            ><i class="fab fa-free-code-camp"></i></a>
+          <a class="btn  btn-floating m-1" href="https://www.linkedin.com/in/jakub-czerepski-a9090b212/" target="_blank" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+      </section>
+        © 2022 Copyright | 
+        Kuba Czerepski
+      </div>
+    </footer>
+<script src="https://kit.fontawesome.com/ff12afe838.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
