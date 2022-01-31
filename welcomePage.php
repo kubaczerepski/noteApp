@@ -19,7 +19,7 @@
         <form method="POST" class="form-floating " id="loginForm">
             <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="Email">
-                    <label for="floatingInput">Email address</label>
+                    <label for="floatingInput">Nickname or Email address</label>
             </div>
             <div class="form-floating">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">

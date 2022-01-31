@@ -17,6 +17,10 @@
     </section>
     <section class="container-fluid d-flex justify-content-center align-items-center" id="formContainer">
         <form method="POST" class="form-floating" id="loginForm">
+          <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Email" name="registerNickname">
+                    <label for="floatingInput">Nickname</label>
+            </div>
             <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="registerEmail">
                     <label for="floatingInput">Email address</label>
@@ -29,9 +33,27 @@
                 <input type="password" class="form-control" id="floatingPasswordConfirm" placeholder="Confirm Password" name="registerPasswordConfirm">
                 <label for="floatingPassword">Confirm Password</label>
             </div>
-            <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
+            <button type="submit" class="btn btn-primary btn-block mb-4" name="sendForm">Register</button>
         </form>
         <h5>Already a member?<a href="../welcomePage.php"> Login!</a></h2>
+        <?php          
+          if(isset($_POST['sendForm'])){
+            $nickname = $_POST['registerNickname'];
+            $email = $_POST['registerEmail']; 
+            $password = $_POST['registerPassword']; 
+            $confirmpass = $_POST['registerPasswordConfirm'];
+            if(empty($nickname) || empty($email) || empty($password) || empty($confirmpass)){
+              echo "<div class='alert alert-danger' role='alert'>
+              Please fill out all the information.
+              </div>";
+            }
+            else if($password !== $confirmpass){
+              echo "<div class='alert alert-danger' role='alert'>
+              Passwords doesn't match!.
+              </div>";
+            }
+          }
+        ?>
     </section>
     <footer class="text-center" >
       <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
